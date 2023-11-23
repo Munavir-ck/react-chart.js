@@ -4,6 +4,7 @@ import SideBar from "../Components/sidebar/SideBar";
 import CountChart from '../Components/Chart/CountChart';
 import Linechart from '../Components/Chart/LineChart';
 import Chart from '../Components/Chart/Piechart';
+import DayReport from "../Components/DayReport/DayReport";
 
 
 
@@ -18,7 +19,12 @@ const Dashboard = () => {
 
       <div className="h-5/6 flex flex-grow">
         <SideBar setActive={setActive} isActive={isActive} />
+       
         <div className="grid grid-cols-1 sm:grid-cols-2  gap-10 p-4 sm:pl-80">
+       
+        <div className="mb-4 sm:py-14">
+        <DayReport/>
+  </div>
   <div className="mb-4">
     <CountChart />
   </div>

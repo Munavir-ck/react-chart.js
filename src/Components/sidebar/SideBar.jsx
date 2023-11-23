@@ -10,6 +10,8 @@ import { MdContactSupport } from "react-icons/md";
 import { FcFaq } from "react-icons/fc";
 import { ImSwitch } from "react-icons/im";
 
+import image from "../../Assets/munavir.jpg";
+
 function SideBar({ isActive, setActive }) {
   return (
     <div
@@ -38,7 +40,7 @@ function SideBar({ isActive, setActive }) {
             </button>
             <div className="flex flex-col items-center bg-white p-5 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700 shadow-lg h-48">
               <img
-                src={""}
+                src={image}
                 alt="profile"
                 className="rounded-full w-20 h-20"
               />
